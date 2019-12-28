@@ -1,0 +1,148 @@
+<TableLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:stretchColumns="1"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="Name"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/nam"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    </TableRow>
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="154dp"
+            android:text="AdmissionNo"
+            android:textSize="25dp"/>
+        <EditText android:inputType="number"
+            android:id="@+id/adno"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    </TableRow>
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="Place"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/plc"
+
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    </TableRow>
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="District"
+            android:textSize="25dp"/>
+     <Spinner
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:entries="@array/Dis"/>
+
+    </TableRow>
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="ParentName"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/par"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    </TableRow>
+
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="Mobile"
+            android:textSize="25dp"/>
+        <EditText
+            android:inputType="number"
+            android:id="@+id/mob" android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    </TableRow>
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="Email"
+            android:textSize="25dp"/>
+        <EditText
+            android:inputType="textEmailAddress"
+            android:id="@+id/eml"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    </TableRow><TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="Password"
+            android:textSize="25dp"/>
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/passs"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    </TableRow><TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:text="ReTypePassword"
+            android:textSize="25dp"/>
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/repa"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/regi"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="REGISTER"
+            android:textSize="20dp"
+            android:background="@drawable/butshape"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/adlog"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="SIGN IN"
+            android:textSize="20dp"
+
+            />
+    </TableRow>
+
+</TableLayout>

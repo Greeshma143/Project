@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string-array name="Dis">
+        <item>Kannur</item>
+        <item>Kozhikod</item>
+        <item>Kasaragod</item>
+        <item>Trivandrum</item>
+        <item>Idukki</item>
+    </string-array>
+</resources>

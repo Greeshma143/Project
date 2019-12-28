@@ -1,0 +1,121 @@
+<TableLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:stretchColumns="1"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="Code"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/cod"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    </TableRow>
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="Title"
+            android:textSize="25dp"/>
+        <EditText  android:id="@+id/tit"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    </TableRow>
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="Description"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/des"
+            android:inputType="textMultiLine"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    </TableRow>
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="Author"
+            android:textSize="25dp"/>
+        <EditText android:id="@+id/aut"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    </TableRow>
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="Publisher"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/pub"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    </TableRow>
+
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="Type"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/typ" android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    </TableRow>
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="Price"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/pri"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/regi"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="REGISTER"
+            android:textSize="20dp"
+            android:background="@drawable/butshape"
+            />
+    </TableRow>
+   <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/adlog"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="SIGN IN"
+            android:textSize="20dp"
+
+            />
+    </TableRow>
+
+</TableLayout>
