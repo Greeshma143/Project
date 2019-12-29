@@ -9,9 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Sturegi"></activity>
+        <activity android:name=".Wel"></activity>
+        <activity android:name=".Delb" />
+        <activity android:name=".Seab" />
+        <activity android:name=".Addb" />
+        <activity android:name=".Aregi" />
+        <activity android:name=".Sturegi" />
         <activity android:name=".Stulog" />
         <activity android:name=".Adregi" />
+        <activity
+            android:name=".Bott"
+            android:label="@string/title_activity_bott"></activity>
         <activity android:name=".Adlog" />
         <activity android:name=".MainActivity">
             <intent-filter>

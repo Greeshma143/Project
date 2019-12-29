@@ -8,22 +8,11 @@
         android:layout_width="match_parent">
         <TextView android:layout_height="wrap_content"
             android:layout_width="150dp"
-            android:text="Name"
+            android:text="Code"
             android:textSize="25dp"/>
         <EditText
-            android:id="@+id/nam"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"/>
-
-    </TableRow>
-    <TableRow android:layout_height="wrap_content"
-        android:layout_width="match_parent">
-        <TextView android:layout_height="wrap_content"
-            android:layout_width="154dp"
-            android:text="AdmissionNo"
-            android:textSize="25dp"/>
-        <EditText android:inputType="number"
-            android:id="@+id/adno"
+            android:id="@+id/cod"
+            android:inputType="number"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
 
@@ -32,11 +21,9 @@
         android:layout_width="match_parent">
         <TextView android:layout_height="wrap_content"
             android:layout_width="150dp"
-            android:text="Place"
+            android:text="Title"
             android:textSize="25dp"/>
-        <EditText
-            android:id="@+id/plc"
-
+        <EditText  android:id="@+id/tit"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
 
@@ -45,23 +32,34 @@
         android:layout_width="match_parent">
         <TextView android:layout_height="wrap_content"
             android:layout_width="150dp"
-            android:text="District"
-            android:textSize="25dp"/>
-     <Spinner
-         android:id="@+id/spi"
-         android:layout_height="wrap_content"
-         android:layout_width="match_parent"
-         android:entries="@array/Dis"/>
-
-    </TableRow>
-    <TableRow android:layout_height="wrap_content"
-        android:layout_width="match_parent">
-        <TextView android:layout_height="wrap_content"
-            android:layout_width="150dp"
-            android:text="ParentName"
+            android:text="Description"
             android:textSize="25dp"/>
         <EditText
-            android:id="@+id/par"
+            android:id="@+id/des"
+            android:inputType="textMultiLine"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    </TableRow>
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="Author"
+            android:textSize="25dp"/>
+        <EditText android:id="@+id/aut"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    </TableRow>
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="Publisher"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/pub"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
 
@@ -71,47 +69,22 @@
         android:layout_width="match_parent">
         <TextView android:layout_height="wrap_content"
             android:layout_width="150dp"
-            android:text="Mobile"
+            android:text="Type"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/typ" android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    </TableRow>
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="Price"
             android:textSize="25dp"/>
         <EditText
             android:inputType="number"
-            android:id="@+id/mob" android:layout_height="wrap_content"
-            android:layout_width="match_parent"/>
-
-    </TableRow>
-    <TableRow android:layout_height="wrap_content"
-        android:layout_width="match_parent">
-        <TextView android:layout_height="wrap_content"
-            android:layout_width="150dp"
-            android:text="Email"
-            android:textSize="25dp"/>
-        <EditText
-            android:inputType="textEmailAddress"
-            android:id="@+id/eml"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"/>
-
-    </TableRow><TableRow android:layout_height="wrap_content"
-        android:layout_width="match_parent">
-        <TextView android:layout_height="wrap_content"
-            android:layout_width="150dp"
-            android:text="Password"
-            android:textSize="25dp"/>
-        <EditText
-            android:inputType="textPassword"
-            android:id="@+id/passs"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"/>
-
-    </TableRow><TableRow android:layout_height="wrap_content"
-        android:layout_width="match_parent">
-        <TextView android:layout_height="wrap_content"
-            android:layout_width="200dp"
-            android:text="ReTypePassword"
-            android:textSize="25dp"/>
-        <EditText
-            android:inputType="textPassword"
-            android:id="@+id/repa"
+            android:id="@+id/pri"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
 
@@ -121,28 +94,13 @@
         android:layout_width="wrap_content"
         android:gravity="center">
         <Button
-            android:id="@+id/regi"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="2dp"
+            android:id="@+id/sub"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="REGISTER"
+            android:text="submit"
             android:textSize="20dp"
             android:background="@drawable/butshape"
-            />
-    </TableRow>
-    <TableRow
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:gravity="center">
-        <Button
-            android:id="@+id/adlog"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_marginTop="5dp"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="SIGN IN"
-            android:textSize="20dp"
-
             />
     </TableRow>
 

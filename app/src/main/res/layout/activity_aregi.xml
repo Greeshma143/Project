@@ -1,0 +1,32 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#2196F3"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADDBooks"
+        android:textSize="30dp"
+        android:id="@+id/addb"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="search books"
+        android:id="@+id/seab"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit/delete Books"
+        android:id="@+id/delb"/>
+
+
+</LinearLayout>

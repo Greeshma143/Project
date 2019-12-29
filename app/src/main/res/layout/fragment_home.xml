@@ -1,0 +1,114 @@
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#33A1F8"
+
+
+        android:stretchColumns="1"
+
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <TableRow android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                 android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:text="Code"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/cod"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+        </TableRow>
+        <TableRow android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:text="Title"
+                android:textSize="20dp"/>
+            <EditText  android:id="@+id/tit"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+        </TableRow>
+        <TableRow android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:text="Description"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/des"
+                android:inputType="textMultiLine"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+        </TableRow>
+        <TableRow android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:text="Author"
+                android:textSize="20dp"/>
+            <EditText android:id="@+id/aut"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+        </TableRow>
+        <TableRow android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:text="Publisher"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/pub"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:text="Type"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/typ" android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+        </TableRow>
+        <TableRow android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:text="Price"
+                android:textSize="20dp"/>
+            <EditText
+                android:inputType="number"
+                android:id="@+id/pri"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center">
+            <Button
+                android:layout_marginTop="2dp"
+                android:id="@+id/sub"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="submit"
+                android:textSize="20dp"
+                android:background="@drawable/butshape"
+                />
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>
