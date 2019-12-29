@@ -81,44 +81,45 @@ public class Sturegi extends AppCompatActivity {
                     e7.setError("email  is required");
                     e7.requestFocus();
                 }else if (pas.isEmpty()) {
-                    e7.setError("Password is required");
-                    e7.requestFocus();
-                }else if (pas!=cpas) {
-                    e7.setError("password does not match");
-                    e7.requestFocus();
+                    e8.setError("Password is required");
+                    e8.requestFocus();
+                }else if (!pas.equals("cpas")) {
+
+                    e9.setError("password does not match");
+                    e9.requestFocus();
                 }
+                else {
 
-                stuModel.setName(nam);
-                stuModel.setAdno(adno);
-                stuModel.setPlce(pla);
-                stuModel.setDis(dis);
-                stuModel.setPar(par);
-                stuModel.setMob(mob);
-                stuModel.setEml(ema);
-                stuModel.setPass(pas);
+                    stuModel.setName(nam);
+                    stuModel.setAdno(adno);
+                    stuModel.setPlce(pla);
+                    stuModel.setDis(dis);
+                    stuModel.setPar(par);
+                    stuModel.setMob(mob);
+                    stuModel.setEml(ema);
+                    stuModel.setPass(pas);
 
-                n = stuModel.getName();
-                a = stuModel.getAdno();
-                p = stuModel.getPlce();
-                d = stuModel.getDis();
-                p1 = stuModel.getPar();
-                m = stuModel.getMob();
-                e = stuModel.getEml();
-                p2 = stuModel.getPass();
+                    n = stuModel.getName();
+                    a = stuModel.getAdno();
+                    p = stuModel.getPlce();
+                    d = stuModel.getDis();
+                    p1 = stuModel.getPar();
+                    m = stuModel.getMob();
+                    e = stuModel.getEml();
+                    p2 = stuModel.getPass();
 
-                databaseReference.push().setValue(stuModel).addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isSuccessful()) {
-                            Toast.makeText(getApplicationContext(), "Succes", Toast.LENGTH_SHORT).show();
+                    databaseReference.push().setValue(stuModel).addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if (task.isSuccessful()) {
+                                Toast.makeText(getApplicationContext(), "Succes", Toast.LENGTH_SHORT).show();
 
+                            } else {
+                                Toast.makeText(getApplicationContext(), "Failed", Toast.LENGTH_SHORT).show();
+                            }
                         }
-                        else
-                            {
-                            Toast.makeText(getApplicationContext(), "Failed", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
+                    });
+                }
             }
         });
     }

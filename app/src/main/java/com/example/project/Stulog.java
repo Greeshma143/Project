@@ -38,7 +38,7 @@ public class Stulog extends AppCompatActivity {
             startActivity(ob3);
         }
 
-        e1=(EditText)findViewById(R.id.use2);
+        e1=(EditText)findViewById(R.id.em);
         e2=(EditText)findViewById(R.id.pas2);
         b1=(Button) findViewById(R.id.log2);
         b2=(Button) findViewById(R.id.reg);
@@ -47,8 +47,6 @@ public class Stulog extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent ob=new Intent(getApplicationContext(),Wel.class);
-                startActivity(ob);
                 String email=e1.getText().toString().trim();
                 final String password=e2.getText().toString().trim();
 
@@ -77,6 +75,9 @@ public class Stulog extends AppCompatActivity {
                                 SharedPreferences.Editor editor=getSharedPreferences("Login",MODE_PRIVATE).edit();
                                 editor.putString("Email",seml);
                                 editor.commit();
+                                Intent ob=new Intent(getApplicationContext(),Wel.class);
+                                startActivity(ob);
+
 
 
                             }

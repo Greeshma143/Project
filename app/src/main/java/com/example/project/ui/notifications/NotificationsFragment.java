@@ -28,6 +28,13 @@ import com.google.firebase.database.ValueEventListener;
 public class NotificationsFragment extends Fragment {
 
     private NotificationsViewModel notificationsViewModel;
+     Button button1,button2,button3;
+     EditText editText1,editText3,editText4,editText5,editText6,editText7,editText8;
+     TextView textView1,textView2,textView3,textView4,textView5,textView6;
+     String ncod,ndes,naut,npub,ntyp,npri;
+
+     Model model;
+     DatabaseReference databaseReference;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -35,13 +42,7 @@ public class NotificationsFragment extends Fragment {
                 ViewModelProviders.of(this).get(NotificationsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_notifications, container, false);
 
-        final Button button1,button2,button3;
-        final EditText editText1,editText3,editText4,editText5,editText6,editText7,editText8;
-        final TextView textView1,textView2,textView3,textView4,textView5,textView6;
 
-
-        final Model model;
-        final DatabaseReference databaseReference;
         editText1=(EditText) root.findViewById(R.id.boktit);
         editText3=(EditText)root.findViewById(R.id.cod);
         editText4=(EditText)root.findViewById(R.id.des);
@@ -73,8 +74,9 @@ public class NotificationsFragment extends Fragment {
                     @Override
                     public void onClick(View view) {
 
-
-                        Query query=databaseReference.orderByChild("titl").equalTo(bt);
+                        String btitle= editText1.getText().toString().trim();
+                        Toast.makeText(getActivity(),btitle,Toast.LENGTH_SHORT).show();
+                        Query query=databaseReference.orderByChild("titl").equalTo(btitle);
                         query.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -112,28 +114,25 @@ public class NotificationsFragment extends Fragment {
                     @Override
                     public void onClick(View view) {
 
-                        final String ncod,ndes,naut,npub,ntyp,npri;
-                        ncod=editText3.getText().toString().trim();
-                        ndes=editText4.getText().toString().trim();
-                        naut=editText5.getText().toString().trim();
-                        npub=editText6.getText().toString().trim();
-                        ntyp=editText7.getText().toString().trim();
-                        npri=editText8.getText().toString().trim();
-                        Query query=databaseReference.orderByChild("titl").equalTo(bt);
+                       String btitle= editText1.getText().toString().trim();
+                        Toast.makeText(getActivity(),btitle,Toast.LENGTH_SHORT).show();
+                        Query query=databaseReference.orderByChild("titl").equalTo(btitle);
                         query.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                 for(DataSnapshot lib:dataSnapshot.getChildren())
                                 {
-                                    lib.getRef().child("code").setValue(ncod);
-                                    lib.getRef().child("desc").setValue(ndes);
-                                    lib.getRef().child("auth").setValue(naut);
-                                    lib.getRef().child("publ").setValue(npub);
-                                    lib.getRef().child("publ").setValue(ntyp);
-                                    lib.getRef().child("pric").setValue(npri);
+                                    lib.getRef().child("code").setValue(editText3.getText().toString().trim());
+                                    lib.getRef().child("desc").setValue(editText4.getText().toString().trim());
+                                    lib.getRef().child("auth").setValue(editText5.getText().toString().trim());
+                                    lib.getRef().child("publ").setValue(editText6.getText().toString().trim());
+                                    lib.getRef().child("publ").setValue(editText7.getText().toString().trim());
+                                    lib.getRef().child("pric").setValue(editText8.getText().toString().trim());
+                                    Toast.makeText(getActivity(),"data succesfully updated",Toast.LENGTH_SHORT).show();
+
 
                                 }
-                                Toast.makeText(getActivity(),"data succesfully updated",Toast.LENGTH_SHORT).show();
+
 
                             }
 
